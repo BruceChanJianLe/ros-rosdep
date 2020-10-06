@@ -25,6 +25,13 @@ sudo rosdep init
 rosdep update
 ```
 
+## Usage for Installing ROS Package
+
+`rosdep` can also be used to install ROS package just as `catkin`.  
+```bash
+rosdep install my_package
+```
+
 ## Usage for Dependency Installation
 
 Install dependency of all packages in the workspace.  
