@@ -77,6 +77,48 @@ src/p3dx/
 └── p3dx_viz
 ```
 
+## Other Usage
+
+```bash
+Usage: rosdep [options] <command> <args>
+
+Commands:
+
+rosdep check <stacks-and-packages>...
+  check if the dependencies of package(s) have been met.
+
+rosdep install <stacks-and-packages>...
+  download and install the dependencies of a given package or packages.
+
+rosdep db
+  generate the dependency database and print it to the console.
+
+rosdep init
+  initialize rosdep sources in /etc/ros/rosdep.  May require sudo.
+
+rosdep keys <stacks-and-packages>...
+  list the rosdep keys that the packages depend on.
+
+rosdep resolve <rosdeps>
+  resolve <rosdeps> to system dependencies
+
+rosdep update
+  update the local rosdep database based on the rosdep sources.
+
+rosdep what-needs <rosdeps>...
+  print a list of packages that declare a rosdep on (at least
+  one of) <rosdeps>
+
+rosdep where-defined <rosdeps>...
+  print a list of yaml files that declare a rosdep on (at least
+  one of) <rosdeps>
+
+rosdep fix-permissions
+  Recursively change the permissions of the user's ros home directory.
+  May require sudo.  Can be useful to fix permissions after calling
+  "rosdep update" with sudo accidentally.
+```
+
 ## Other Options
 
 ```bash
