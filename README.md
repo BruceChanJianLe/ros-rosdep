@@ -38,6 +38,8 @@ Install dependency of all packages in the workspace.
 ```bash
 cd catkin_ws
 rosdep install --from-paths src --ignore-src -r -y
+# If you are ros2 you may want to run the following
+rosdep install --from-paths src --rosdistro galactic --ignore-src -y
 ```
 
 Structure of the directory.  
